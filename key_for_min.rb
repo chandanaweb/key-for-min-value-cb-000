@@ -5,8 +5,10 @@ def key_for_min_value(name_hash)
  if name_hash.empty?
    return nil
  else
- name_hash.collect do|key,value|
+   new_arr = name_hash.to_a
+ new_arr.collect do|key,value|
    low_value = 0
+   return new_arr
  end
  end
 end
