@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
    new_arr = name_hash.to_a
  new_arr.collect do|key,value|
    low_value = 0
-   return value
+  key
  end
  end
 end
