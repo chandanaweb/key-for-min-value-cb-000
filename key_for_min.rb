@@ -5,8 +5,7 @@ def key_for_min_value(name_hash)
  if name_hash.empty?
    return nil
  else
-   new_arr = name_hash.to_a
-   p = name_hash.reduce{ |f, s| f.last > s.last ? s : f }.first
-  return p
+   lowest_key = name_hash.reduce{ |f, s| f.last > s.last ? s : f }.first
+  return lowest_key
  end
 end
